@@ -1,0 +1,5 @@
+<h3>{{ title }}: {{counter}}</h3>
+
+<button [disabled]="counter <= 0" (click)="decrementBy()">-1</button>
+<button (click)="reset()">reset</button>
+<button (click)="incrementBy()">+1</button>
