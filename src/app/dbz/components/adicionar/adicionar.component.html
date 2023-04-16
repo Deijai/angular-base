@@ -1,13 +1,19 @@
-<h4> Adicionar Personagem</h4>
+<h4>Adicionar Personagem</h4>
 <form (ngSubmit)="emitCharacter()">
-
-  <input [(ngModel)]="character.name" type="text" name="name" class="form-control mb-2"  required>
-  <input [(ngModel)]="character.power" type="number" name="power" class="form-control mb-2" required>
+  <input
+    [(ngModel)]="character.name"
+    type="text"
+    name="name"
+    class="form-control mb-2"
+    required
+  />
+  <input
+    [(ngModel)]="character.power"
+    type="number"
+    name="power"
+    class="form-control mb-2"
+    required
+  />
 
   <button type="submit" class="btn btn-primary">Save</button>
-
-  <pre>
-    {{ character | json }}
-  </pre>
-
 </form>

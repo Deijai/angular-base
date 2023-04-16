@@ -8,16 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index.component.css'],
 })
 export class IndexComponent implements OnInit {
-  constructor(private dbzService: DbzService){}
+  constructor(private dbzService: DbzService) {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   public receiveNewCharacter(character: Character): void {
-      return this.dbzService.receiveNewCharacter(character);
+    this.dbzService.receiveNewCharacter(character);
   }
 
   public removePersonagem(character: Character): void {
-    return this.dbzService.removePersonagem(character);
+    this.dbzService.removePersonagem(character);
   }
 
   public get getCharacters(): Array<Character> {
